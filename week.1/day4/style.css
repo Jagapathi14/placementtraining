@@ -1,0 +1,59 @@
+p{
+    color: royalblue;
+    font-size: 100px;
+}
+body{
+    background-color: plum;
+}
+footer{
+    color: cornsilk;
+    font-size: 35px;
+}
+blockquote{
+    color: cornsilk;
+    font-size: 35px;
+
+}
+button{
+    border-radius: 150px;
+    position: relative;
+     left: 700px;
+     padding: auto;
+     margin-top: 50px;
+     font-size: 20px;
+     background-color: maroon;
+     color: black;
+     cursor: pointer;
+    
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.navbar{
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px;
+
+}
+.navbar ul{
+    list-style:none ; 
+    display:flex;
+    justify-content: right;
+}
+.navbar li{
+  padding:0px 10px;
+ list-style: none;
+}
+.navbar a{
+    
+
+    color:rgb(221, 15, 15);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.navbar a:hover{
+    border-radius: 400px;
+    color: rgb(221, 15, 15);
+    background-color: white;
+}

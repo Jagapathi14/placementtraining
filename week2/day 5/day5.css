@@ -1,0 +1,23 @@
+.jaga{
+    width: 300px;
+    height: 100px;
+    background-color: green;
+    color: white;
+    border-style:solid;
+    text-align: center;
+    padding: 25px 30px 45px 50px;
+    margin: 100px;
+    margin-left: 600px;
+    margin-right: 400px;
+}
+p{
+    background-color: beige;
+    color: darkorange;
+    text-align: center;
+}
+.rangeex{
+    display: flex;
+    justify-content: center;
+    color: rgb(77, 6, 255);
+    background-color: brown;
+}

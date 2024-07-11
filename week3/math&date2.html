@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week3</title>
+</head>
+<body>
+    <button onclick="manageEvent()">calculatethetime</button>
+    <script>
+        function manageEvent() {
+    let eventDateString = prompt("Enter the event date (YYYY-MM-DD):");
+    let eventDate = new Date(eventDateString);
+    let today = new Date();
+    let timeDifference = eventDate.getTime() - today.getTime();
+    let daysUntilEvent = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+    let formattedDate = eventDate.toLocaleDateString('en-GB');
+    let eventStatus;
+    if (daysUntilEvent > 0) {
+        eventStatus = "Future";
+    } else if (daysUntilEvent < 0) {
+        eventStatus = "Past";
+    } else {
+        eventStatus = "Present";
+    }
+    let localTimeOffset = 5.5 * 60 * 60 * 1000; // Offset in milliseconds
+    let localEventDate = new Date(eventDate.getTime() + localTimeOffset);
+
+    // Display the results
+    console.log(`Days until event: ${daysUntilEvent}`);
+    console.log(`Event Date (formatted): ${formattedDate}`);
+    console.log(`Event Status: ${eventStatus}`);
+    console.log(`Event Date in Local Time Zone (UTC+5:30): ${localEventDate}`);
+}
+</script>
+</body>
+</html>
